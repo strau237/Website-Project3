@@ -9,18 +9,83 @@
 body, html {
   height: 100%;
   font-family: "Inconsolata", sans-serif;
+  ul {list-style-type: none;}
+  body {font-family: Verdana, sans-serif;}
+
+  /* Month header */
+  .month {
+    padding: 70px 25px;
+    width: 100%;
+    background: #1abc9c;
+    text-align: center;
+  }
+
+  /* Month list */
+  .month ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+
+  /* Previous button inside month header */
+  .month .prev {
+    float: left;
+    padding-top: 10px;
+  }
+
+  /* Next button */
+  .month .next {
+    float: right;
+    padding-top: 10px;
+  }
+
+  /* Weekdays (Mon-Sun) */
+  .weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color:#ddd;
+  }
+
+  .weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+  }
+
+  /* Days (1-31) */
+  .days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+  }
+
+  .days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+  }
+
+  /* Highlight the "current" day */
+  .days li .active {
+    padding: 5px;
+    background: #1abc9c;
+    color: white !important
+  }
+
 }
 
-.bgimg {
-  background-position: center;
-  background-size: cover;
-  background-image: url("https://cdn.vox-cdn.com/thumbor/Ug5fyWzvoVUO7KRwtGNUq940efs=/0x469:2773x2566/1200x480/filters:focal(1233x1130:1675x1572)/cdn.vox-cdn.com/uploads/chorus_image/image/61861299/D_D_Art_and_Arcan__Regular_Edition__book_cover.0.jpg");
-  min-height: 100%
-}
 
-.menu {
-  display: none;
-}
 </style>
 <body>
 <!-- Links (sit on top) -->
@@ -44,14 +109,32 @@ body, html {
 <div class="w3-container" id="about">
   <div class="w3-content" style="max-width:700px">
     <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Annoucements</span></h5>
-      <p>More text will eventually be put here, but this initial draft is about fleshing out
-      the framework of the website, and less focus is being given to actual content of the pages
-      at this time</p>
-
+    <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+            <span class="w3-right w3-opacity"><b>September 30, 2019 </b></span>
+            <h4><b>TODAY'S SESSION (09/30) HAS BEEN CANCELED!</b></h4><br>
+            <hr class="w3-clear">
+            <p>Players Frank and Chris had scheduling conflicts this week are making it difficult for enough players to gather for a meeting this week. We will resume game play as scheduled next Monday (10/7/19)</p>
+              <div class="w3-row-padding" style="margin:0 -16px">
+                <div class="w3-half">
+                              </div>
+                <div class="w3-half">
+                          </div>
+            </div>
+          </div>
+<div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+            <span class="w3-right w3-opacity"><b>September 28, 2019 </b></span>
+            <h4><b>Lost member--be prepared for story edits</b></h4><br>
+            <hr class="w3-clear">
+            <p> Due to scheduling issues and course load this semester, Rachel will no longer be attending this guild's session.
+            All players should be prepared next session to make character and story adjustments to work around the lost quest member. We'll discuss this further
+          at this week's meeting!</p>
+              <div class="w3-row-padding" style="margin:0 -16px">
+                <div class="w3-half">
+                              </div>
+                <div class="w3-half">
+                          </div>
+            </div>
 </div>
-
-<!--Calendar-->
-
 <div class="month">
   <ul>
     <li class="prev">&#10094;</li>
@@ -82,5 +165,4 @@ body, html {
   <li>9</li>
   <li><span class="active">10</span></li>
   <li>11</li>
-  ...etc
 </ul>
