@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!DOCTYPE meetings [
+<!ELEMENT meeting (meetings)>
+<!ELEMENT meetings (title, number, date, members, notes)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT number (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT members (#PCDATA)>
+<!ELEMENT missing (#PCDATA)>
+<!ELEMENT notes (#PCDATA)>
+]>
+
+<meetings>
+  <meeting>
+    <title>Week 1: Introduction to the New Session</title>
+    <number> Session 1 </number>
+    <date> September 1, 2019 </date>
+    <members> Chris, Rachel, Frank, Derek, Steve </members>
+    <missing> All present </missing>
+    <notes> Today was an introduction to the newest campaign with our four new players. Today's session was about introductory
+    rules, character and world building, and other housekeeping steps needed to start game play. Lorem ipsum dolor sit amet,
+    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</notes>
+  </meeting>
+
+  <meeting>
+    <title>Week 2: Campaign Launch </title>
+    <number> Session 2 </number>
+    <date> September 8, 2019 </date>
+    <members> Chris, Rachel, Frank, Derek, Steve </members>
+    <missing> All present> </missing>
+    <notes>  Lorem ipsum dolor sit amet,
+    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</notes>
+  </meeting>
+
+  <meeting>
+    <title>Week 3</title>
+    <number> Session 3 </number>
+    <date> September 15, 2019 </date>
+    <members> Chris, Frank, Derek, Steve </members>
+    <missing> Rachel </missing>
+    <notes>  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</notes>
+  </meeting>
+
+</meetings>
