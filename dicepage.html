@@ -37,10 +37,122 @@ body, html {
       <a href="session.html"class="w3-button w3-block w3-black">SESSION LOGS</a>
     </div>
     <div class="w3-col s3">
-      <a href="resources page.html" class="w3-button w3-block w3-black">RESOURCE</a>
+      <a href="resources page.html" class="w3-button w3-block w3-black">RESOURCES</a>
     </div>
     <div class="w3-col s3">
       <a href= "dicepage.html" class="w3-button w3-block w3-black">SAMPLE DICE</a>
     </div>
   </div>
 </div>
+
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class"w3-center w3-padding-63"><span class="w3-tag w3-wide"></span></h5>
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Dice Simulator</span></h5>
+    <p> Every D&D player needs a set of 7 dice for gameplay. This includes a 4-side dice, a 6-sided dice, an 8-sided dice,
+      a 10-sided dice, a 12-sided dice, and a 20-sided dice. If you don't have access to a dice for gameplay, or
+      want to simulate a game or character building, feel free to use the dice buttons provided here! </p>
+
+      <div class="w3-row-padding w3-padding-5 w3-center">
+          <div class="w3-quarter">
+      </div>
+<!DOCTYPE html>
+<h4>4-Sided Dice</h4>
+<button onclick="document.getElementById('demo').innerHTML = getRndInteger(1,5)"><b>Roll 4-Sided Dice</b></button>
+<p id="demo"></p>
+<script>
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+</script>
+</body>
+</div>
+</html>
+</div>
+
+<div class="w3-row-padding w3-padding-1 w3-center">
+    <div class="w3-quarter">
+</div>
+<h4>6-Sided Dice</h4>
+<button onclick="document.getElementById('demo6').innerHTML = getRndInteger(1,7)"><b>Roll 6-Sided Dice</b></button>
+<p id="demo6"></p>
+<script>
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+</script>
+</body>
+</div>
+
+<div class="w3-row-padding w3-padding-1 w3-center">
+    <div class="w3-quarter">
+</div>
+</html>
+<!DOCTYPE html>
+<h4>8-Sided Dice</h4>
+<button onclick="document.getElementById('demo8').innerHTML = getRndInteger(1,9)"><b>Roll 8-Sided Dice</b></button>
+<p id="demo8"></p>
+<script>
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+</script>
+</body>
+</div>
+<div class="w3-row-padding w3-padding-1 w3-center">
+    <div class="w3-quarter">
+</div>
+</html>
+<h4>10-Sided Dice</h4>
+
+<button onclick="document.getElementById('demo10').innerHTML = getRndInteger(0,11)"><b>Roll 10-Sided Dice</b></button>
+
+<p id="demo10"></p>
+
+<script>
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+</script>
+</body>
+</div>
+<div class="w3-row-padding w3-padding-1 w3-center">
+    <div class="w3-quarter">
+</div>
+</html>
+<!DOCTYPE html>
+
+<h4>12-Side Dice</h4>
+<button onclick="document.getElementById('demo12').innerHTML = getRndInteger(1,13)"><b>Roll 12-Sided Dice</b></button>
+
+<p id="demo12"></p>
+
+<script>
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+</script>
+</body>
+</div>
+<div class="w3-row-padding w3-padding-1 w3-center">
+    <div class="w3-quarter">
+</div>
+</html>
+
+<h4>20-Sided Dice</h4>
+
+<button onclick="document.getElementById('demo20').innerHTML = getRndInteger(1,21)"><b>Roll 20-Sided Dice</b></button>
+
+<p id="demo20"></p>
+
+<script>
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+</script>
+</body>
+</div>
+<div class="w3-row-padding w3-padding-1 w3-center">
+    <div class="w3-quarter">
+</div>
+</html>
